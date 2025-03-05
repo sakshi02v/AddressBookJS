@@ -5,7 +5,7 @@ const addressBook = new AddressBook();
 
 try {
     const contact1 = new Contact(
-        "Sakshi", "Verma", "Bhopal", "India", "In", "100001", "9998887770", "sakshi02v@gmail.com"
+       "Sakshi", "Verma", "Bhopal", "India", "In", "100001", "9998887770", "sakshi02v@gmail.com"
     );
     console.log(addressBook.addContact(contact1)); 
 
@@ -32,11 +32,13 @@ try {
     console.log(addressBook.viewPersonsByCityOrState());
 
     console.log("Count of Contacts by City and State:");
-    console.log(addressBook.countByCityOrState());
+    console.log(addressBook.countByCityOrState()); 
+
+    console.log("\nContacts Sorted Alphabetically:");
+    console.log(addressBook.sortContactsByName().map(contact => contact.toString()).join("\n"));
 } catch (error) {
     console.error("Error:", error.message);
 }
-
 try {
     const invalidContact = new Contact(
         "sa", "ver", "abc", "In", "I", "100A01", "12345", "invalid-email"
