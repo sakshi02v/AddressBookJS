@@ -14,9 +14,9 @@ try {
     )
     console.log(addressBook.addContact(contact2)); 
     console.log("All Contacts Before editing", addressBook.getAllContacts());
-    console.log(addressBook.editContact("Rakesh", { address: "Pipariya", city: "New York", phone: "9234567890" }));
+    console.log(addressBook.editContact("Akshay", { address: "Pipariya", city: "New York", phone: "9234567890" }));
     console.log("All Contacts After editing", addressBook.getAllContacts());
-    console.log(addressBook.deleteContact("Rakesh"));
+    console.log(addressBook.deleteContact("Akshay"));
     console.log("All Contacts After Deleting:", addressBook.getAllContacts());
     console.log("Total Contacts:", addressBook.countContacts()); 
 
