@@ -5,12 +5,12 @@ const addressBook = new AddressBook();
 
 try {
     const contact1 = new Contact(
-        "Anand", "Soni", "Bhopal", "India", "In", "100001", "9876543210", "anandsoni9165@gmail.com"
+        "Sakshi", "Verma", "Bhopal", "India", "In", "100001", "9998887771", "sakhsi02v@gmail.com"
     );
     console.log(addressBook.addContact(contact1)); 
 
     const contact2 = new Contact(
-        "Rakesh", "Soni", "Bhopal", "India","In","1000000","9197979988","rakeshsoni395@gmail.com"
+        "Ram", "agrawal", "Bhopal", "India","In","1000000","9889988991","agrawalram395@gmail.com"
     )
     console.log(addressBook.addContact(contact2)); 
     console.log("All Contacts", addressBook.getAllContacts());
